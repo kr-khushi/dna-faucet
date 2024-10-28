@@ -168,7 +168,7 @@ const SendToken = () => {
           </button>
         </form>
         {/* Success or error messages */}
-        {transactionLink && (
+        {/* {transactionLink && (
           <div className="text-green-600 text-center mb-4 mt-2">
             Transaction successful! Check it on{" "}
             <a
@@ -180,7 +180,7 @@ const SendToken = () => {
               Etherscan
             </a>
           </div>
-        )}
+        )} */}
         {errorMessage && (
           <div className="text-red-600 text-center mb-4 mt-2">
             Error: {errorMessage}
