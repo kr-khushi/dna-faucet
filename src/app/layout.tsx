@@ -1,3 +1,4 @@
+import MiniKitProvider from "@/provider/MiniKitProvider";
 import "./globals.css";
 import { Comic_Neue } from "next/font/google";
 const comic_neue = Comic_Neue({
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${comic_neue.className}`}>{children}</body>
+      <body className={`${comic_neue.className}`}>
+        <MiniKitProvider>{children}</MiniKitProvider>
+      </body>
     </html>
   );
 }
